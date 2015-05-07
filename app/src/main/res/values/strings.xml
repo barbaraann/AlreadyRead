@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Already Read</string>
+
+    <string name="no_books">No Books</string>
+    <string name="menuitem_add">Add</string>
+    <string name="menuitem_edit">Edit</string>
+    <string name="menuitem_delete">Delete</string>
+    <string name="button_save_book">Save Book</string>
+    <string name="hint_bookTitle">Book Title (Required)</string>
+    <string name="hint_author">Author</string>
+    <string name="hint_series">Series</string>
+    <string name="hint_orderInSeries">Order In Series</string>
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="hint_checkboxAlreadyRead">Check if read</string>
+    <string name="label_bookTitle">Book Title:</string>
+    <string name="label_author">Author:</string>
+    <string name="label_series">Series:</string>
+    <string name="label_orderInSeries">Order In Series:</string>
+    <string name="label_checkboxAlreadyRead">Read</string>
+    <string name="onCheckboxAlreadyReadClicked"></string>
+    <string name="confirm_title">Are You Sure?</string>
+    <string name="confirm_message">This will permanently delete the book</string>
+    <string name="ok">OK</string>
+    <string name="error_message">You must enter a book title</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
+
+</resources>

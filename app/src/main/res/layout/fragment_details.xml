@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/detailsScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:useDefaultMargins="true" >
+
+        <TextView
+            android:id="@+id/bookTitleLabelTextView"
+            style="@style/BookLabelTextView"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="Book Title" />
+
+        <TextView
+            android:id="@+id/bookTitleTextView"
+            android:layout_column="1"
+            android:layout_row="0"
+            style="@style/BookTextView" />
+
+        <TextView
+            android:id="@+id/authorLabelTextView"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Author"
+            style="@style/BookLabelTextView" />
+
+        <TextView
+            android:id="@+id/authorTextView"
+            android:layout_column="1"
+            android:layout_row="1"
+            style="@style/BookTextView" />
+
+        <TextView
+            android:id="@+id/seriesLabelTextView"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="Series"
+            style="@style/BookLabelTextView" />
+
+        <TextView
+            android:id="@+id/seriesTextView"
+            android:layout_column="1"
+            android:layout_row="2"
+            style="@style/BookTextView" />
+
+        <TextView
+            android:id="@+id/orderInSeriesLabelTextView"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="Order In Series"
+            style="@style/BookLabelTextView" />
+
+        <TextView
+            android:id="@+id/orderInSeriesTextView"
+            android:layout_column="1"
+            android:layout_row="3"
+            style="@style/BookTextView" />
+
+        <CheckBox
+            android:id="@+id/checkboxAlreadyRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:text="Already Read"
+            android:onClick="@string/onCheckboxAlreadyReadClicked"/>
+
+            </GridLayout>
+
+</ScrollView>
+

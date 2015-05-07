@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context="com.example.barbara.alreadyread.AddEditFragment"
+            android:id="@+id/addEditScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <GridLayout
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:columnCount="1"
+            android:orientation="vertical"
+            android:useDefaultMargins="true">
+
+            <EditText
+                android:id="@+id/bookTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Book Title (Required)"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapWords">
+            </EditText>
+
+        <EditText
+            android:id="@+id/authorEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Author: LastName, FirstName"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/seriesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Series"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/orderInSeriesEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Order Number in a Series (0 if not in Series)"
+            android:imeOptions="actionNext"
+            android:inputType="text" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/checkboxAlreadyRead"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="Check if read"
+            android:onClick="onCheckboxAlreadyReadClicked"
+            android:focusable="false"
+            android:saveEnabled="true"/>
+
+        <Button
+            android:id="@+id/saveBookButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Save Book"
+            android:onClick="saveBookButtonClicked">
+    </Button>
+</GridLayout>
+</ScrollView>
